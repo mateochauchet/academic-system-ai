@@ -42,21 +42,22 @@ facultad-ai/
 ├── CLAUDE.md                  ← Este archivo (system prompt)
 ├── README.md                  ← Descripción general del sistema
 ├── context/
-│   ├── perfil_estudiante.md   ← Quién es Mateo, año, carrera, historial
+│   ├── perfil.md              ← Quién es Mateo, año, carrera, historial
 │   ├── objetivos.md           ← Qué quiere lograr este cuatrimestre
-│   └── metodologia_estudio.md ← Cómo estudia, qué le funciona
-├── materias/
+│   └── metodologia.md         ← Cómo estudia, qué le funciona
+├── materias/                  ← Materias activas (cursando ahora)
 │   └── [nombre_materia]/
-│       ├── programa.md        ← Contenidos, unidades, criterios de aprobación
-│       ├── profesor.md        ← Datos del docente, estilo de evaluación
-│       ├── calendario.md      ← Fechas de parciales, TPs, recuperatorios
-│       ├── clases/            ← Apuntes de cada clase (clase_01.md, etc.)
-│       ├── material/          ← PDFs y apuntes del profe
-│       ├── resumenes/         ← Resúmenes elaborados por unidad
+│       ├── meta/
+│       │   ├── index.md       ← Opcional: Estado actual de la materia (leer primero)
+│       │   ├── programa.md    ← Unidades, temas, criterios de aprobación
+│       │   └── cronograma.md  ← Fechas de parciales, plan semana a semana
+│       ├── clases/            ← Apuntes de clase (clase_01-[tema].md)
+│       ├── material/          ← PDFs y material de la cátedra
+│       ├── teoria/            ← Conceptos y definiciones elaboradas
+│       ├── resumenes/         ← Resúmenes por unidad (material de estudio)
 │       ├── ejercicios/        ← TPs y ejercicios resueltos
-│       ├── examenes/          ← Parciales de años anteriores
-│       └── dudas/             ← Preguntas abiertas y dudas resueltas
-├── archive/               ← Materias cerradas (aprobadas o pausadas)
+│       └── examenes/          ← Parciales anteriores y simulacros
+├── archive/                   ← Materias cerradas (aprobadas o pausadas)
 ├── prompts/
 │   ├── tutor.md               ← Cómo comportarse como tutor
 │   ├── generador_resumen.md   ← Cómo generar resúmenes
@@ -66,8 +67,8 @@ facultad-ai/
 ```
 
 **Reglas de navegación:**
-- Antes de ayudar con una materia, leé su `programa.md` si existe.
-- Si Mateo pregunta por fechas, revisá `calendario.md` de la materia o `TASKS.md`.
+- Antes de ayudar con una materia, leé su `meta/index.md` para ver el estado actual, y `meta/programa.md` para el contenido.
+- Si Mateo pregunta por fechas, revisá `meta/cronograma.md` de la materia o `TASKS.md` para la vista global.
 - Si hay un prompt específico para la tarea (ej: simular parcial), leé ese `.md` de `prompts/` y seguí esas instrucciones.
 - Si generás un resumen o ejercicio resuelto, ofrecé guardarlo en la carpeta correspondiente.
 
@@ -86,7 +87,7 @@ facultad-ai/
 
 ## Perfil académico
 
-Para más contexto sobre Mateo (historial, fortalezas, materias aprobadas), leer `context/perfil_estudiante.md`.
+Para más contexto sobre Mateo (historial, fortalezas, materias aprobadas), leer `context/perfil.md`.
 
 ---
 
