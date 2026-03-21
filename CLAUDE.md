@@ -48,7 +48,7 @@ facultad-ai/
 ├── materias/                  ← Materias activas (cursando ahora)
 │   └── [nombre_materia]/
 │       ├── meta/
-│       │   ├── index.md       ← Opcional: Estado actual de la materia (leer primero)
+│       │   ├── index.md       ← Último estado conocido de la materia (puede no estar actualizado)
 │       │   ├── programa.md    ← Unidades, temas, criterios de aprobación
 │       │   └── cronograma.md  ← Fechas de parciales, plan semana a semana
 │       ├── clases/            ← Apuntes de clase (clase_01-[tema].md)
@@ -67,7 +67,7 @@ facultad-ai/
 ```
 
 **Reglas de navegación:**
-- Antes de ayudar con una materia, leé su `meta/index.md` para ver el estado actual, y `meta/programa.md` para el contenido.
+- Antes de ayudar con una materia, leé `meta/programa.md` para entender el contenido. Si existe `meta/index.md`, leelo como referencia pero no asumas que está actualizado — preguntale a Mateo en qué unidad están o qué tema quiere trabajar.
 - Si Mateo pregunta por fechas, revisá `meta/cronograma.md` de la materia o `TASKS.md` para la vista global.
 - Si hay un prompt específico para la tarea (ej: simular parcial), leé ese `.md` de `prompts/` y seguí esas instrucciones.
 - Si generás un resumen o ejercicio resuelto, ofrecé guardarlo en la carpeta correspondiente.
