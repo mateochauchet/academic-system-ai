@@ -149,13 +149,16 @@ FIN
 ## 8. Estructuras de Control
 
 ### Condicional Simple
+Si una condición es verdadera, se ejecuta lo que está dentro del condicional y luego se continúa desde donde este termina.
 ```
-Si condición entonces
-    instrucciones
+Si edad > 18 entonces
+    Mostrar("Usted es mayor de edad")
 fSi
+// y luego se continua desde aquí
 ```
 
 ### Condicional Alternativo (if-else)
+Si la condición es verdadera se ejecuta el primer bloque; si es falsa, el bloque alternativo. Finalizado uno u otro, el flujo continúa desde donde termina todo el condicional — no se pasa de un bloque al otro.
 ```
 Si estado = "activo" entonces
     Mostrar("Puede acceder")
@@ -178,10 +181,11 @@ fSi
 ```
 
 ### Mientras (while)
-Se ejecuta mientras la condición sea verdadera. Puede no ejecutarse ninguna vez.
+Se ejecuta mientras la condición sea verdadera. Puede no ejecutarse ninguna vez. Es importante que dentro del bucle algo cambie para que la condición eventualmente se vuelva falsa, de lo contrario se produce un loop infinito.
 ```
+Ingresar(edad)
 Mientras edad < 18 entonces
-    Mostrar("Ingrese edad válida")
+    Mostrar("Por favor, ingrese una edad mayor a 18")
     Ingresar(edad)
 fMientras
 ```
@@ -303,7 +307,7 @@ Proced ingresarNum (ref num: entero)
         Mostrar("Ingrese un entero positivo")
         Ingresar(num)
     Hasta que num > 0
-fProced
+fFunc
 
 // Uso:
 a: entero

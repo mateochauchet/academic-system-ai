@@ -82,12 +82,14 @@ o(f) = { g | ∀c₀ ∈ ℝ⁺, ∃n₀ ∈ ℕ, ∀n ≥ n₀ : g(n) ≤ c₀ 
 
 Diferencia con O: el cuantificador sobre c₀ es universal (∀) en lugar de existencial (∃).
 
-Caracterización por límites: `g ∈ o(f) ⟺ lim(n→∞) g(n)/f(n) = 0`
-
-Propiedades clave:
-- **Antirreflexividad:** `f ∉ o(f)`
-- `o(f) ⊂ O(f)` (inclusión propia)
-- Transitiva
+Propiedades:
+1. **Invariancia multiplicativa:** `g ∈ o(f) ⟺ c·g ∈ o(f)`
+2. **Invariancia aditiva:** `g ∈ o(f) ⟺ c + g ∈ o(f)`
+3. **Antirreflexividad:** `f ∉ o(f)`
+4. **Caracterización en términos de O:** `g ∈ o(f)` si y solo si `g ∈ O(f)` pero `f ∉ O(g)`. En particular: `o(f) ⊂ O(f)` (inclusión propia)
+5. **Otra relación con O:** `g ∈ o(f) ⟺ O(g) ⊆ o(f)`
+6. **Transitividad:** si `h ∈ o(g)` y `g ∈ o(f)` → `h ∈ o(f)`
+7. **Caracterización por límites:** `g ∈ o(f) ⟺ lim(n→∞) g(n)/f(n) = 0`
 
 ### 3.3 Omega Ω (cota inferior)
 
