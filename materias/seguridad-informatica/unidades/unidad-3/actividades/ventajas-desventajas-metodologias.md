@@ -1,0 +1,2 @@
+1. Discuta las ventajas y desventajas de los métodos de escaneo de Caja Blanca, Caja Negra y Caja Gris.
+2. Explique la importancia de combinar diferentes métodos de escaneo en la detección de vulnerabilidades.

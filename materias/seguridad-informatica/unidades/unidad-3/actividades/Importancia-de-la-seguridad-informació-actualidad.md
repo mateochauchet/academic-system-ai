@@ -1,0 +1,3 @@
+a)      Participe en el Foro  debatiendo sobre la importancia de la seguridad de la información en la actualidad. Explique los riesgos que enfrentan las empresas y organizaciones por no tomar medidas para proteger sus activos de información.
+
+b)      Discuta las ventajas y desventajas de diferentes métodos para mitigar las vulnerabilidades. Explique qué métodos son más adecuados para diferentes tipos de organizaciones.
