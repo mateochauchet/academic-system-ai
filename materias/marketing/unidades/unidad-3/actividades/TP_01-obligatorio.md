@@ -5,7 +5,7 @@ Cierre: martes, 5 de mayo de 2026, 23:59
 
 # TP 01 — Caso Netflix
 
-**Caso base:** `caso-netflix.txt`
+**Caso base:** `caso-netflix.md`
 
 ## Consignas
 
