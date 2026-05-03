@@ -48,29 +48,30 @@ facultad-ai/
 ├── materias/                  ← Materias activas (cursando ahora)
 │   └── [nombre_materia]/
 │       ├── meta/
-│       │   ├── index.md       ← Último estado conocido de la materia (puede no estar actualizado)
 │       │   ├── programa.md    ← Unidades, temas, criterios de aprobación
 │       │   └── cronograma.md  ← Fechas de parciales, plan semana a semana
 │       ├── clases/            ← Apuntes de clase (clase_01-[tema].md)
-│       ├── material/          ← PDFs y material de la cátedra
+│       ├── material/          ← PDFs y material general de la materia
 │       ├── teoria/            ← Conceptos y definiciones elaboradas
-│       ├── resumenes/         ← Resúmenes por unidad (material de estudio)
-│       ├── ejercicios/        ← TPs y ejercicios resueltos
-│       └── examenes/          ← Parciales anteriores y simulacros
-├── archive/                   ← Materias cerradas (aprobadas o pausadas)
-├── prompts/
-│   ├── tutor.md               ← Cómo comportarse como tutor
-│   ├── generador_resumen.md   ← Cómo generar resúmenes
-│   ├── simulador_parcial.md   ← Cómo simular un examen
-│   └── corrector.md           ← Cómo corregir ejercicios o código
-└── TASKS.md                   ← Tareas pendientes y fechas importantes
+│       ├── resumenes/         ← Resúmenes generales de la materia
+│       ├── ejercicios/        ← Ejercicios generales
+│       ├── examenes/          ← Parciales anteriores y simulacros
+│       └── unidades/          ← Material organizado por unidad
+│           └── unidad-N/
+│               ├── index.md       ← Índice de la unidad
+│               ├── material/      ← PDFs originales de la cátedra
+│               ├── guia/          ← Conversión markdown del material (guia-unidad-N.md)
+│               ├── apuntes/       ← Notas personales
+│               ├── actividades/   ← TPs y entregables
+│               └── resumenes/     ← Resúmenes de esa unidad
+└── archive/                   ← Materias cerradas (aprobadas o pausadas)
 ```
 
 **Reglas de navegación:**
-- Antes de ayudar con una materia, leé `meta/programa.md` para entender el contenido. Si existe `meta/index.md`, leelo como referencia pero no asumas que está actualizado — preguntale a Mateo en qué unidad están o qué tema quiere trabajar.
-- Si Mateo pregunta por fechas, revisá `meta/cronograma.md` de la materia o `TASKS.md` para la vista global.
-- Si hay un prompt específico para la tarea (ej: simular parcial), leé ese `.md` de `prompts/` y seguí esas instrucciones.
-- Si generás un resumen o ejercicio resuelto, ofrecé guardarlo en la carpeta correspondiente.
+- Antes de ayudar con una materia, leé `meta/programa.md` para entender el contenido y preguntale a Mateo en qué unidad están o qué tema quiere trabajar.
+- Si Mateo pregunta por fechas, revisá `meta/cronograma.md` de la materia.
+- Para trabajar con una unidad específica, leé `unidades/unidad-N/index.md` como punto de entrada, luego `guia/guia-unidad-N.md` para el contenido teórico.
+- Si generás un resumen o ejercicio resuelto, guardalo en la carpeta correspondiente dentro de la unidad (`resumenes/` o `actividades/`).
 
 ---
 
