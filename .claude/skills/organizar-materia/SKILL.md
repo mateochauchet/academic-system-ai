@@ -21,16 +21,21 @@ Listá lo que encontraste antes de continuar.
 
 Para cada archivo, determiná dos cosas: **¿a qué nivel pertenece?** y **¿qué tipo es?**
 
+### Regla fundamental sobre PDFs y markdown
+
+**El PDF original siempre queda en `material/`. El markdown generado va en otro lado.**
+Nunca reemplaces un PDF por su conversión — son dos artefactos distintos que coexisten.
+
 ### ¿Nivel materia o nivel unidad?
 
-| Señal en el nombre o ubicación | Destino |
-|-------------------------------|---------|
-| Contiene "programa" | `meta/programa.md` |
-| Contiene "cronograma" | `meta/cronograma.md` |
-| Contiene "parcial", "examen", "final" | `examenes/` |
-| Contiene "unidad" + número | `unidades/unidad-N/` |
-| Ya está en carpeta `unidad-N/` | esa unidad |
-| Sin señal clara | Leé las primeras líneas del archivo y cruzalas contra `meta/programa.md` para inferir la unidad. Si sigue siendo ambiguo, preguntale al usuario. |
+| Señal en el nombre o ubicación | Destino del PDF | Markdown generado |
+|-------------------------------|-----------------|-------------------|
+| Contiene "programa" | `material/` (queda ahí) | `meta/programa.md` |
+| Contiene "cronograma" | `material/` (queda ahí) | `meta/cronograma.md` |
+| Contiene "parcial", "examen", "final" | `examenes/` | — |
+| Contiene "unidad" + número | `unidades/unidad-N/material/` | `unidades/unidad-N/guia/guia-unidad-N.md` |
+| Ya está en carpeta `unidad-N/` | `unidades/unidad-N/material/` | `unidades/unidad-N/guia/guia-unidad-N.md` |
+| Sin señal clara | Leé las primeras líneas y cruzalas contra `meta/programa.md`. Si sigue siendo ambiguo, preguntale al usuario. | |
 
 ### ¿Qué tipo dentro de la unidad?
 
