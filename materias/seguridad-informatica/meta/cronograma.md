@@ -10,7 +10,7 @@
 | 6 | 23/04 | III | Continuación lectura Unidad III. | Encuentros sincrónicos del campus |
 | 7 | 30/04 | IV | Inicio lectura Unidad IV. | Encuentros sincrónicos del campus |
 | 8 | 30/04 | IV | Continuación lectura Unidad IV. | Encuentros sincrónicos del campus |
-| 9 | 07/05 | I–IV | **1er Parcial** (Unidades I, II, III y IV) | Encuentros sincrónicos del campus |
+| 9 | 07/05 | I–IV | **1er Parcial** (Unidades I, II, III y IV) — virtual sincrónico, 1h30 hs (confirmado por prof. Paradisi) | Encuentros sincrónicos del campus |
 | 10 | 07/05 | V | Inicio lectura Unidad V. | Encuentros sincrónicos del campus |
 | 11 | 14/05 | V | Continuación lectura Unidad V. Inicio lectura Unidad VI. | Encuentros sincrónicos del campus |
 | 12 | 21/05 | VI | Lectura Unidad VI. | Encuentros sincrónicos del campus |
@@ -25,7 +25,7 @@
 
 | Fecha | Evento |
 |-------|--------|
-| 07/05/2026 | **1er Parcial** (Unidades I–IV) |
+| 07/05/2026 | **1er Parcial** (Unidades I–IV) — virtual sincrónico, 1h30 hs — prof. Paradisi |
 | 11/06/2026 | **2do Parcial** (Unidades V–VI) |
 | 18/06/2026 | Recuperatorio 1er Parcial |
 | 25/06/2026 | Recuperatorio 2do Parcial + Coloquio Integrador |
